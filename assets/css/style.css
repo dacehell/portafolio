@@ -1,0 +1,150 @@
+body *{
+  font-family:'Roboto', sans-serif;
+}
+.background{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+nav .logo {
+  font-size: 30pt;
+  color: white;
+  font-family: 'Bangers', cursive;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+nav button{
+  margin-bottom: 20px;
+}
+.img-fluid{
+  width: 100vw;
+}
+.card {
+  margin: 2em 1em 2em 1em;
+}
+
+}
+div span{
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #28A745;
+
+}
+.card-footer {
+  text-align: right;
+}
+
+.card-title{
+  font-size: 20pt;
+  color: #212529;
+  font-weight: 300;
+  text-align: left;
+}
+.card-text {
+  font-size: 16pt;
+  color: #707070;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.card-footer .text-muted{
+font-size: 16pt;
+font-weight: 300;
+color: #212529;
+display: inline-block;
+
+}
+.card-footer{
+  background:white;
+  border-top: unset;
+}
+
+div hr{
+  margin-top: 0;
+}
+
+div .card-body{
+  padding-bottom: 5px;
+
+}
+
+footer img{
+  height:30px;
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-size: 16pt;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 15px 20px 15px;
+}
+button {
+  margin-top: 20px;
+  text-align:center;
+}
+form{
+
+  background:black;
+
+}
+form p{
+  margin: 20px 0 20px 0;
+  font-size: 21pt;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container-fluid{
+  padding-top:5px;
+}
+.card-img-top{
+  height: 250px;
+}
+#container-card{
+  background-color: rgb(27, 99, 129);
+}
+form button {
+  height:60px;
+  width:150px;
+  margin-bottom: 18px;
+}
+.btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+div .form-group .form-control{
+  height: calc(3.5rem + 2px);
+}
+input#exampleInputEmail1.form-control {
+  height: calc(3.5rem + 2px);
+}
+.btn-primary{
+  color:black;
+    background-color: #F8F9FA;
+    border-color: #DDDDDD;
+}
+h2{
+  font-size: 25pt;
+  font-weight: 500;
+  color: FFFFFF;
+  text-align: center;
+}
+.hero-section{
+    position: relative;
+    text-align: center;
+}
+div .soy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20pt;
+}
+.soy :last-child{
+  font-size: 10pt;
+}
