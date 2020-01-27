@@ -2,14 +2,18 @@ body *{
   font-family:'Roboto', sans-serif;
 }
 .background{
-  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  background-image: linear-gradient(-210deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 }
-nav .logo {
+.logo {
   font-size: 30pt;
   color: white;
   font-family: 'Bangers', cursive;
   vertical-align: middle;
   margin-bottom: 0;
+}
+.logo-hero{
+  font-family: 'Bangers', cursive;
+  font-size:80pt;
 }
 nav button{
   margin-bottom: 20px;
@@ -19,15 +23,6 @@ nav button{
 }
 .card {
   margin: 2em 1em 2em 1em;
-}
-
-}
-div span{
-  font-size: 20px;
-  margin-left: 10px;
-  font-weight: 500;
-  color: #28A745;
-
 }
 .card-footer {
   text-align: right;
@@ -79,7 +74,7 @@ footer p{
   font-size: 16pt;
   font-weight: 300;
   text-align: center;
-  margin: 0 15px 20px 15px;
+  margin: 0 15px 0px 15px;
 }
 button {
   margin-top: 20px;
@@ -105,7 +100,7 @@ form p{
   height: 250px;
 }
 #container-card{
-  background-color: rgb(27, 99, 129);
+  background-image: linear-gradient(210deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 }
 form button {
   height:60px;
@@ -122,16 +117,20 @@ div .form-group .form-control{
 input#exampleInputEmail1.form-control {
   height: calc(3.5rem + 2px);
 }
-.btn-primary{
-  color:black;
-    background-color: #F8F9FA;
-    border-color: #DDDDDD;
-}
+
 h2{
+  margin-top: 10px;
   font-size: 25pt;
   font-weight: 500;
   color: FFFFFF;
   text-align: center;
+}
+.white{
+  margin-top: 10px;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
 }
 .hero-section{
     position: relative;
@@ -139,12 +138,144 @@ h2{
 }
 div .soy{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 20pt;
+  font-size: 55pt;
 }
 .soy :last-child{
   font-size: 10pt;
+}
+@media only screen and (max-width: 600px){
+  #hero-margen {
+    margin-top: 96px;
+  }
+  div .soy{
+    font-size: 20pt;
+  }
+  .logo-hero{
+    font-size: 50px;
+  }
+}
+footer{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+.icons {
+
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+}
+.fa-linkedin-in, .fa-instagram, .fa-twitter {
+  margin-left: 10px;
+}
+#color-icon {
+  color: #473B7B;
+}
+.btn {
+  font-size: 1rem;
+}
+.icons i{
+  color: #FFFFFF;
+  font-size:2.1rem;
+}
+
+
+.linea-tiempo {
+  position: relative;
+  width: 500px;
+  max-width: 95vw;
+  height: 100%;
+  font-family: Arial;
+}
+
+.linea-tiempo::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.momento {
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.momento:nth-child(even) {
+  left: 55%;
+}
+
+.momento::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.momento:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
+
+.momento h3 {
+  margin: 10px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.momento .descripcion {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.momento .descripcion::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 10px);
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #eee;
+}
+
+.momento:nth-child(even) .descripcion {
+  background-color: #3393FE;
+  color: white;
+}
+
+.momento:nth-child(even) .descripcion::after{
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #3393FE;
+  border-left: none;
+}
+#bgtimeline {
+  background-color:#cfd4dae8;
+  margin: 0;
+}
+#acercacontainer{
+  background-color:#cfd4dae8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*.linea-tiempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
